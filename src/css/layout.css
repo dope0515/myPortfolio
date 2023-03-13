@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/*header*/
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header .head-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+  /*로고*/
+  /* gnb */
+}
+header .head-inner h1 a img {
+  max-width: 8rem;
+}
+header .head-inner .gnb ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*top btn*/
+.top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
