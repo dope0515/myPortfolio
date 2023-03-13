@@ -26,10 +26,18 @@ header {
             ul {
                 display: flex;
                 align-items: center;
+                gap: 2rem;
                 li {
-
+                    a {
+                        font-size: 2.4rem;
+                        font-weight: 700;
+                    }
                 }
             }
+        }
+        /*util list*/
+        .util-list {
+            display: none;
         }
     }
 }
