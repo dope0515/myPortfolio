@@ -17,7 +17,7 @@ header .head-inner {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  padding: 2rem;
+  padding: 2rem 4rem;
   /*로고*/
   /* gnb */
   /*util list*/
@@ -51,4 +51,19 @@ header .head-inner .util-list {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+/*main contents*/
+main section {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+main #intro strong {
+  font-size: 20rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
