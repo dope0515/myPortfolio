@@ -5,6 +5,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
 }
 header .head-inner {
   display: -webkit-box;
@@ -19,27 +20,30 @@ header .head-inner {
   width: 100%;
   padding: 2rem 4rem;
   /*로고*/
-  /* gnb */
-  /*util list*/
+  /*ham-btn*/
 }
 header .head-inner h1 a img {
   max-width: 8rem;
 }
-header .head-inner .gnb ul {
+header .head-inner .ham-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20px;
+  height: 11px;
 }
-header .head-inner .gnb ul li a {
-  font-size: 2.4rem;
-  font-weight: 700;
-}
-header .head-inner .util-list {
-  display: none;
+header .head-inner .ham-btn span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #222222;
 }
 
 /*top btn*/
@@ -60,10 +64,11 @@ main section {
   position: relative;
 }
 main #intro strong {
-  font-size: 20rem;
+  font-size: 3.4rem;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
   left: 50%;
+  white-space: nowrap;
 }
