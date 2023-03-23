@@ -25,26 +25,6 @@ header .head-inner {
 header .head-inner h1 a img {
   max-width: 8rem;
 }
-header .head-inner .ham-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 20px;
-  height: 11px;
-}
-header .head-inner .ham-btn span {
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #222222;
-}
 
 /*top btn*/
 .top-btn {
@@ -57,18 +37,67 @@ header .head-inner .ham-btn span {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
+/*util-wrap*/
+.util-wrap {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+}
+.util-wrap ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.6rem;
+}
+.util-wrap ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3.6rem;
+  height: 3.6rem;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+.util-wrap ul li a img {
+  max-width: 100%;
+}
+.util-wrap ul li:nth-child(2) a {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.util-wrap ul li:nth-child(2) a img {
+  width: 84%;
+}
+.util-wrap ul li:nth-child(3) a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.util-wrap ul li:nth-child(3) a img {
+  width: 96%;
+}
+
 /*main contents*/
 main section {
   width: 100%;
   min-height: 100vh;
   position: relative;
 }
-main #intro strong {
-  font-size: 3.4rem;
+main #intro {
+  background: url(./../images/common/intro_bg.svg) no-repeat center center;
+}
+main #intro ul {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
   left: 50%;
+}
+main #intro ul li strong {
+  font-size: 3.4rem;
   white-space: nowrap;
 }
