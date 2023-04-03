@@ -1,0 +1,10 @@
+//가상 선택자 아이콘 초기값
+@mixin iconDefault($width,$height,$url,$format:"svg") { 
+    content: '';
+    width: $width;
+    height: $height;
+    background-image: url('/assets/images/icon/#{$url}.#{format}');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
