@@ -3,7 +3,7 @@
   $file-path,
   $font-style: normal,
   $font-weight: 400,
-  $file-formats: eot woff2 woff ttf svg
+  $file-formats: eot woff2 woff ttf svg otf
 ) {
   @if & {
     @error "You must call the mixin at the root level of your style sheet, not in the `#{&+'{'+'}'}` selector.";
