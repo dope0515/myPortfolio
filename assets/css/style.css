@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 800;
+  font-style: normal;
+  src: url("./../font/nanum-square/NanumSquareEB.ttf") format("truetype"), url("./../font/nanum-square/NanumSquareEB.otf") format("opentype");
+}
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./../font/nanum-square/NanumSquareB.ttf") format("truetype"), url("./../font/nanum-square/NanumSquareB.otf") format("opentype");
+}
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./../font/nanum-square/NanumSquareR.ttf") format("truetype"), url("./../font/nanum-square/NanumSquareR.otf") format("opentype");
+}
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 300;
+  font-style: normal;
+  src: url("./../font/nanum-square/NanumSquareL.ttf") format("truetype"), url("./../font/nanum-square/NanumSquareL.otf") format("opentype");
+}
 html {
   font-size: 10px;
 }

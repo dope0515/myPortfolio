@@ -8,3 +8,36 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+// 말줄임 효과
+@mixin ellipsis($line: 1) {
+    @if ($line == 1) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    } @else {
+      display: -webkit-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: $line;
+    }
+  }
+
+//미디어 쿼리 (반응형)
+$devices: (
+  mobile: 320px,
+  tablet: 768px,
+  desktop: 1280px
+);
+
+@mixin mq($device) {
+    @if map-has-key($devices, $device) {
+      $device-width: map-get($devices, $device);
+      @media screen and (max-width: #{$device-width}) {
+        @content;
+      }
+    } @else {
+      @warn 'Invalid breakpoint: #{$device}.';
+    }
+  }
