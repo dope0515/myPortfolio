@@ -102,3 +102,60 @@ legend {
   left: -9999999px;
   top: 0;
 }
+
+header .head-inner h1 {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+}
+
+footer .util-wrap {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+}
+footer .util-wrap ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.6rem;
+}
+footer .util-wrap ul li a {
+  display: block;
+  width: 3.6rem;
+  height: 3.6rem;
+  padding: 0.6rem 0.6rem 0.4rem;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+footer .util-wrap ul li a img {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+footer .top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+main section {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+}
+main section#about .sec-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 144rem;
+  height: 100%;
+  margin: 0 auto;
+}

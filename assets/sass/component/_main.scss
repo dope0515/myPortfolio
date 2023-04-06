@@ -1,0 +1,16 @@
+main {
+    section {
+        display: block;
+        width: 100%;
+        min-height: 100vh;
+        &#about {
+            .sec-inner {
+                display: flex;
+                align-items: center;
+                max-width: 144rem;
+                height: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
