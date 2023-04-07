@@ -3,6 +3,12 @@ main {
         display: block;
         width: 100%;
         min-height: 100vh;
+        &#intro {
+            background-image: url('./../images/common/intro_bg.jpg');
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: 100% ;
+        }
         &#about {
             .sec-inner {
                 display: flex;

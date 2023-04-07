@@ -4,6 +4,16 @@ header {
             position: fixed;
             top: 2rem;
             left: 2rem;
+            a {
+                display: block;
+                background-color: #FFFFFF;
+                border-radius: 0.4rem;
+                &:hover {
+                    img {
+                        @include filter(mauve);
+                    }
+                }
+            }
         }
     }
 }

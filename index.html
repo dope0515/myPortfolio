@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keyword" content="퍼블리셔, 포트폴리오, Html, Porfolio, Publisher, Publishing">
     <meta name="author" content="박승주">
-    <title>박승주 퍼블리셔 포트폴리오</title>
+    <title>박승주 | 웹 퍼블리셔 포트폴리오</title>
     <!--css-->
     <link rel="stylesheet" href="./assets/css/style.css"> <!--reset css-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" ><!--aos css-->
     <!--js-->
     <script src="./assets/js/include.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script> <!--gsap.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script> <!--scrolltrigger.js-->
 </head>
 <body>
     <!--header-->
@@ -62,8 +64,27 @@
     <!--footer-->
     <footer data-include="./html/include/footer.html"></footer>
     <!--//footer-->
+
+     <!--loading-->
+     <div class="loading">
+        <div class="inner">
+            <div class="img-wrap">
+                <img src="./assets/images/common/logo.svg" alt="로고">
+            </div>
+            <div class="txt-wrap">
+                <span class="loading-text-words">L</span>
+                <span class="loading-text-words">O</span>
+                <span class="loading-text-words">A</span>
+                <span class="loading-text-words">D</span>
+                <span class="loading-text-words">I</span>
+                <span class="loading-text-words">N</span>
+                <span class="loading-text-words">G</span>
+            </div>
+        </div>
+     </div>
+     <!--//loading-->
     <script>
         AOS.init();
-      </script>
+    </script>
 </body>
 </html>
