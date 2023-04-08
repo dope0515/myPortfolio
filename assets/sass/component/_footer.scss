@@ -3,6 +3,7 @@ footer {
         position: fixed;
         bottom: 2rem;
         left: 2rem;
+        transition-delay: 5s;
         ul {
             display: flex;
             align-items: center;
@@ -16,10 +17,59 @@ footer {
                     text-align: center;
                     border: 2px solid #000;
                     border-radius: 50%;
+                    transition: border-color 0.3s;
+                    position: relative;
+                    z-index: 1;
+                    &::before {
+                        content: '';
+                        width: 0%;
+                        height: 0%;
+                        border-radius: 50%;
+                        position: absolute;
+                        transform: translate(-50%, -50%);
+                        top: 50%;
+                        left: 50%;
+                        z-index: -1;
+                        transition: width, height, 0.3s;
+                    }
                     img {
                         width: 100%;
                         display: inline-block;
-                        vertical-align: middle;
+                    }
+                }
+                &:hover {
+                    a {
+                        border-color: #FFFFFF;
+                        &::before {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        img {
+                            filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(259deg) brightness(98%) contrast(106%);
+                        }
+                    }
+                    //인스타그램
+                    &:nth-child(1) {
+                        a{
+                            &::before {
+                                background: #d6249f;
+                                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        a{
+                            &::before {
+                                background: #ec5307;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        a{
+                            &::before {
+                                background: #7dbbe6;
+                            }
+                        }
                     }
                 }
             }
@@ -29,5 +79,6 @@ footer {
         position: fixed;
         bottom: 2rem;
         right: 2rem;
+        transition-delay: 5s;
     }
 }

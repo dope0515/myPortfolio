@@ -6,6 +6,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    animation: fadeout 0.5s 3s forwards;
     .inner {
         transform: translate(-50%, -50%);
         position: absolute;
@@ -33,7 +34,12 @@
         }
     }
 }
+
 @keyframes blur-text {
     0% {filter: blur(0px);}
     100% {filter: blur(4px);}
+  }
+@keyframes fadeout {
+    0% {opacity: 1; z-index: 1;}
+    100% {opacity: 0; z-index: -1;}
   }

@@ -4,16 +4,24 @@ header {
             position: fixed;
             top: 2rem;
             left: 2rem;
+            z-index: 100;
+            transition-delay: 4.5s;
             a {
                 display: block;
                 background-color: #FFFFFF;
                 border-radius: 0.4rem;
                 &:hover {
                     img {
-                        @include filter(mauve);
+                        animation: swing ease-in-out 1s infinite alternate;
                     }
                 }
             }
         }
     }
+}
+
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
 }
