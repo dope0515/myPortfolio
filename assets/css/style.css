@@ -347,6 +347,22 @@ main section {
   min-height: 100vh;
   position: relative;
 }
+main section .sec-inner {
+  max-width: 144rem;
+  height: 100vh;
+  margin: 0 auto;
+}
+main section .sec-inner .flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 main section:not(#intro) {
   padding: 4rem 0;
 }
@@ -393,28 +409,19 @@ main section#about {
   width: calc(100% - 6rem);
   margin: 0 auto;
 }
-main section#about .sec-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+main section#about .sec-inner .flex-box {
   gap: 5rem;
-  max-width: 144rem;
-  height: 100vh;
-  margin: 0 auto;
 }
-main section#about .sec-inner .img-wrap {
+main section#about .sec-inner .flex-box .img-wrap {
   position: relative;
   min-width: 40rem;
 }
-main section#about .sec-inner .img-wrap img {
+main section#about .sec-inner .flex-box .img-wrap img {
   max-width: 75rem;
   width: 100%;
   height: auto;
 }
-main section#about .sec-inner .img-wrap::before {
+main section#about .sec-inner .flex-box .img-wrap::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -423,6 +430,101 @@ main section#about .sec-inner .img-wrap::before {
   left: -2rem;
   border: 3px solid #ffdb45;
 }
+main section#about .sec-inner .flex-box .txt-wrap strong {
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 2;
+  text-align: right;
+}
+main section#about .sec-inner .txt-wrap p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: justify;
+}
 main section#about .sec-inner .txt-wrap p + p {
   margin-top: 1.4rem;
+}
+main section#work {
+  background-color: #f4f4f4;
+}
+main section#work .sec-inner {
+  padding-top: 16rem;
+}
+main section#work .sec-inner .flex-box {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+main section#work .sec-inner .flex-box .sec-tit {
+  font-size: 5rem;
+  font-weight: 700;
+}
+main section#work .sec-inner .flex-box .sec-tit img {
+  display: inline;
+  max-width: 6rem;
+}
+main section#work .sec-inner .flex-box .skill-list li {
+  margin-bottom: 4rem;
+}
+main section#work .sec-inner .flex-box .skill-list li strong {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+main section#work .sec-inner .flex-box .skill-list li strong::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 0.2rem;
+  background-color: #222222;
+  margin-right: 0.4rem;
+  vertical-align: 0.6rem;
+}
+main section#work .sec-inner .flex-box .skill-list li:last-child {
+  margin-bottom: 0;
+}
+main section#project {
+  width: calc(100% - 6rem);
+  max-width: 120rem;
+  margin: 0 auto;
+}
+main section#project .sec-inner {
+  padding-top: 16rem;
+}
+main section#project .sec-inner .sec-tit {
+  font-size: 5rem;
+  font-weight: 800;
+  text-align: center;
+}
+main section#project .sec-inner .project-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 10rem;
+}
+main section#project .sec-inner .project-list li {
+  width: calc(33.3333333333% - 1.333rem);
+}
+main section#project .sec-inner .project-list li a {
+  display: block;
+  text-align: center;
+}
+main section#project .sec-inner .project-list li a .img-wrap img {
+  display: block;
+  width: 100%;
+  height: 30rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main section#project .sec-inner .project-list li a span {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 1.6rem;
 }
