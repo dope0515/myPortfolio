@@ -1,3 +1,5 @@
+@use '../help/mixin' as *;
+
 main {
     section {
         display: block;
@@ -23,6 +25,7 @@ main {
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
+            overflow-x: hidden;
             .intro-bg {
                 content: '';
                 width: 100%;
@@ -34,6 +37,7 @@ main {
                 left: 0;
             }
             ul {
+                width: calc(100% - 6rem);
                 position: absolute;
                 transform: translate(-50%, -50%);
                 top: 50%;
@@ -84,6 +88,7 @@ main {
                             font-weight: 700;
                             line-height: 2;
                             text-align: right;
+                            white-space: nowrap;
                         }
                     }
                 }
@@ -105,6 +110,8 @@ main {
                 padding-top: 16rem;
                 .flex-box {
                     align-items: flex-start;
+                    width: calc(100% - 6rem);
+                    margin: 0 auto;
                     .sec-tit {
                         font-size: 5rem;
                         font-weight: 700;
@@ -144,7 +151,8 @@ main {
             max-width: 120rem;
             margin: 0 auto;
             .sec-inner {
-                padding-top: 16rem;
+                padding-top: 10rem;
+                height: auto;
                 .sec-tit {
                     font-size: 5rem;
                     font-weight: 800;
@@ -158,14 +166,18 @@ main {
                     margin-top: 10rem;
                     li {
                         width: calc(100% / 3 - 1.333rem);
+                        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
+                        border-radius: 0.4rem;
                         a {
                             display: block;
                             text-align: center;
+                            padding: 1rem;
                             .img-wrap {
                                 img {
                                     display: block;
-                                    width: 100%;
+                                    max-width: 100%;
                                     height: 30rem;
+                                    margin: 0 auto;
                                     object-fit: contain;
                                 }
                             }
@@ -175,6 +187,222 @@ main {
                                 font-weight: 700;
                                 margin-top: 1.6rem;
                             }
+                        }
+                        &:nth-child(2) {
+                            a {
+                                .img-wrap {
+                                    img {
+                                        max-width: 20rem;
+                                        width: 58%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#study {
+            width: calc(100% - 6rem);
+            max-width: 120rem;
+            margin: 0 auto;
+            .sec-inner {
+                padding-top: 6rem;
+                .sec-tit {
+                    font-size: 4rem;
+                    font-weight: 800;
+                    text-align: center;
+                }
+                .work-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 2rem;
+                    width: 100%;
+                    margin-top: 10rem;
+                    li {
+                        width: calc(100% / 3 - 1.333rem);
+                        border: 0.1rem solid #ededed;
+                        a {
+                            display: block;
+                            .img-wrap {
+                                overflow: hidden;
+                                img {
+                                    display: block;
+                                    max-width: 31rem;
+                                    width: 100%;
+                                    height: 15rem;
+                                    margin: 0 auto;
+                                    object-fit: contain;
+                                    transition: all 0.3s;
+                                }
+                            }
+                            .txt-wrap {
+                                border-top: 0.1rem solid #ededed;
+                                padding: 1.2rem;
+                                strong {
+                                    font-size: 1.8rem;
+                                    font-weight: 700;
+                                    margin-bottom: 1.2rem;
+                                    position: relative;
+                                    @include ellipsis(1);
+                                    &::before {
+                                        content: '';
+                                        width: 0%;
+                                        height: 0.1rem;
+                                        background-color: #000000;
+                                        position: absolute;
+                                        bottom: -0.2rem;
+                                        left: 0;
+                                        transition: width 0.3s ease-in-out;
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                            a {
+                                .img-wrap {
+                                    img {
+                                        transform: scale(1.05);
+                                    }
+                                }
+                                .txt-wrap {
+                                    strong {
+                                        &::before {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mq('desktop') {
+    main {
+     section {
+        .sec-inner {
+            height: auto;
+        }
+        &#about {
+            .sec-inner {
+                .flex-box {
+                    flex-direction: column;
+                    gap: 0;
+                    .img-wrap {
+                        min-width: unset;
+                        width: 60%;
+                        align-self: flex-start;
+                    }
+                    .txt-wrap {
+                        align-self: flex-end;
+                        margin-top: -20vh;
+                    }
+                }
+                .txt-wrap {
+                    margin-top: 10rem;
+                }
+            }
+        }
+        &#work {
+            .sec-inner {
+                padding-top: 0;
+                .flex-box {
+                    flex-direction: column;
+                    .sec-tit {
+                        margin-bottom: 6rem;
+                    }
+                }
+            }
+        }
+        &#project {
+            .sec-inner {
+                padding-top: 0;
+                .project-list {
+                    li {
+                        width: calc(50% - 1rem);
+                        a {
+                            .img-wrap {
+                                img {
+                                    height: 13rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#study {
+            .sec-inner {
+                .work-list {
+                    li {
+                        width: calc(50% - 1rem);
+                    }
+                }
+            }
+        }
+     }   
+    }
+}
+
+@include mq('mobile') {
+    main {
+        section {
+            &:not(#intro) {
+                min-height: unset;
+            }
+            &#intro {
+                ul {
+                    li {
+                        strong {
+                            font-size: 2.8rem;
+                        }
+                    }
+                }
+            }
+            &#about {
+                .sec-inner {
+                    .flex-box {
+                        .txt-wrap {
+                            strong {
+                                font-size: 2.8rem;
+                            }
+                        }
+                    }
+                    .txt-wrap {
+                        margin-top: 8rem;
+                        p {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+            &#project {
+                .sec-inner {
+                    .sec-tit {
+                        font-size: 2.8rem;
+                    }
+                    .project-list {
+                        margin-top: 4rem;
+                        li {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            &#study {
+                .sec-inner {
+                    padding-top: 0;
+                    .sec-tit {
+                        font-size: 2.8rem;
+                    }
+                    .work-list {
+                        margin-top: 4rem;
+                        li {
+                            width: 100%;
                         }
                     }
                 }
