@@ -394,7 +394,6 @@ main section#intro {
   background-position: center 70%;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden;
 }
 main section#intro .intro-bg {
   content: "";
