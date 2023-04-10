@@ -2,7 +2,9 @@ $(document).ready(function(){
 
     // 페이지 로딩 후 최상단으로 이동
     $(window).on('beforeunload', function() {
+        // 브라우저 창을 닫기 전에 수행할 작업
         $(window).scrollTop(0);
+        return null;
       });
 
     gsap.registerPlugin(ScrollTrigger);

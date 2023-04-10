@@ -693,7 +693,7 @@ main section#study .sec-inner .work-list li:hover a .txt-wrap strong::before {
     width: calc(50% - 1rem);
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 440px) {
   main section:not(#intro) {
     min-height: unset;
   }
