@@ -394,7 +394,6 @@ main section#intro {
   background-position: center 70%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   overflow-x: hidden;
 }
 main section#intro .intro-bg {
@@ -700,6 +699,10 @@ main section#study .sec-inner .work-list li:hover a .txt-wrap strong::before {
   }
   main section#intro ul li strong {
     font-size: 2.8rem;
+  }
+  main section#about .sec-inner .flex-box .img-wrap::before {
+    top: -1.2rem;
+    left: -1.4rem;
   }
   main section#about .sec-inner .flex-box .txt-wrap strong {
     font-size: 2.8rem;

@@ -24,7 +24,6 @@ main {
             background-position: center 70%;
             background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed;
             overflow-x: hidden;
             .intro-bg {
                 content: '';
@@ -366,6 +365,12 @@ main {
             &#about {
                 .sec-inner {
                     .flex-box {
+                        .img-wrap {
+                            &::before {
+                                top: -1.2rem;
+                                left: -1.4rem;
+                            }
+                        }
                         .txt-wrap {
                             strong {
                                 font-size: 2.8rem;
