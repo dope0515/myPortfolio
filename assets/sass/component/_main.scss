@@ -19,6 +19,7 @@ main {
         &:not(#intro) {
             padding: 4rem 0;
         }
+        //Intro
         &#intro {
             background-image: url('./../images/common/intro_bg.jpg');
             background-position: center 70%;
@@ -55,6 +56,7 @@ main {
                 }
             }
         }
+        //About
         &#about {
             width: calc(100% - 6rem);
             margin: 0 auto;
@@ -102,6 +104,7 @@ main {
                 }
             }
         }
+        //Work
         &#work {
             background-color: #f4f4f4;
             .sec-inner {
@@ -144,6 +147,7 @@ main {
                 }
             }
         }
+        //Project
         &#project {
             width: calc(100% - 6rem);
             max-width: 120rem;
@@ -200,6 +204,7 @@ main {
                 }
             }
         }
+        //Study
         &#study {
             width: calc(100% - 6rem);
             max-width: 120rem;
@@ -273,6 +278,45 @@ main {
                             }
                         }
                     }
+                }
+            }
+        }
+        //Contact
+        &#contact {
+            min-height: auto;
+            background-color: #F4F4F4;
+            .sec-inner {
+                height: auto;
+                .sec-tit {
+                    font-size: 4rem;
+                    font-weight: 800;
+                    margin-bottom: 4rem;
+                }
+                .contact-form {
+                    max-width: 54rem;
+                    border: 0.1rem solid #222222;
+                    border-radius: 0.4rem;
+                    padding: 1.4rem;
+                    margin: 0 auto;
+                    li {
+                        margin-bottom: 2rem;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        label {
+                            span {
+                                display: block;
+                                margin-bottom: 1.4rem;
+                            }
+                            input,textarea {
+                                width: 100%;
+                                padding: 0.4rem 0.8rem;
+                            }
+                            textarea {
+                                resize: none; 
+                            }
+                        }
+                    }       
                 }
             }
         }

@@ -250,6 +250,7 @@ footer .top-btn.up img {
 }
 
 .loading {
+  display: none;
   width: 100%;
   height: 100%;
   background-color: #FFFFFF;
@@ -640,6 +641,42 @@ main section#study .sec-inner .work-list li:hover a .img-wrap img {
 }
 main section#study .sec-inner .work-list li:hover a .txt-wrap strong::before {
   width: 100%;
+}
+main section#contact {
+  min-height: auto;
+  background-color: #F4F4F4;
+}
+main section#contact .sec-inner {
+  height: auto;
+}
+main section#contact .sec-inner .sec-tit {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 4rem;
+}
+main section#contact .sec-inner .contact-form {
+  max-width: 54rem;
+  border: 0.1rem solid #222222;
+  border-radius: 0.4rem;
+  padding: 1.4rem;
+  margin: 0 auto;
+}
+main section#contact .sec-inner .contact-form li {
+  margin-bottom: 2rem;
+}
+main section#contact .sec-inner .contact-form li:last-child {
+  margin-bottom: 0;
+}
+main section#contact .sec-inner .contact-form li label span {
+  display: block;
+  margin-bottom: 1.4rem;
+}
+main section#contact .sec-inner .contact-form li label input, main section#contact .sec-inner .contact-form li label textarea {
+  width: 100%;
+  padding: 0.4rem 0.8rem;
+}
+main section#contact .sec-inner .contact-form li label textarea {
+  resize: none;
 }
 
 @media screen and (max-width: 1280px) {
