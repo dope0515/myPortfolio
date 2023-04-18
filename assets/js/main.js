@@ -16,7 +16,6 @@ $(document).ready(function(){
             start: "1% top", //시작 지점
             end: "bottom bottom",
             scrub: 1, //모션 바운스
-            pin:true, //고정
         }
     });
 
