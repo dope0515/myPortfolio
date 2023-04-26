@@ -286,6 +286,7 @@ main {
             min-height: auto;
             background-color: #F4F4F4;
             .sec-inner {
+                width: calc(100% - 4rem);
                 height: auto;
                 .sec-tit {
                     font-size: 4rem;

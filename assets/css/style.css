@@ -646,6 +646,7 @@ main section#contact {
   background-color: #F4F4F4;
 }
 main section#contact .sec-inner {
+  width: calc(100% - 4rem);
   height: auto;
 }
 main section#contact .sec-inner .sec-tit {
