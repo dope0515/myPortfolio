@@ -230,25 +230,35 @@
         <section id="contact">
             <div class="sec-inner">
                 <h4 class="sec-tit" data-aos="fade-in">Contact</h4>
-                <form>
+                <form method="POST" data-email="abpo4243@gmail.com"
+                action="https://script.google.com/macros/s/AKfycbxPllnK4-I_w8JnsYyKciUCpbwfqWYw2hzAkDxPkMq91ZW-aBpRvxFwLl620gSPPOYd/exec" target="frAttachFiles">
                     <ul class="contact-form" data-aos="fade-up">
                         <li>
-                            <label>
-                                <span>성함 :</span>
-                                <input type="text">
-                            </label>
+                            <fieldset>
+                                <label>
+                                    <span>성함 :</span>
+                                    <input type="text" type="text" name="이름" placeholder="성함">
+                                </label>
+                            </fieldset>
                         </li>
                         <li>
-                            <label>
-                                <span>이메일 :</span>
-                                <input type="text">
-                            </label>
+                            <fieldset>
+                                <label>
+                                    <span>이메일 :</span>
+                                    <input type="text" type="text" name="이메일 주소" placeholder="이메일">
+                                </label>
+                            </fieldset>
                         </li>
                         <li>
-                            <label>
-                                <span>문의사항 :</span>
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
-                            </label>
+                            <fieldset>
+                                <label>
+                                    <span>문의사항 :</span>
+                                    <textarea name="문의사항" cols="30" rows="10"></textarea>
+                                </label>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <button type="submit" id="sendMail">전송하기</button>
                         </li>
                     </ul>
                 </form>

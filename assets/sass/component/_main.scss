@@ -316,6 +316,14 @@ main {
                                 resize: none; 
                             }
                         }
+                        button {
+                            display: block;                            
+                            background-color: #FFFFFF;
+                            border: 0.1rem solid #000000;
+                            border-radius: 0.4rem;
+                            margin: 0 auto;
+                            padding: 0.4rem 2rem;
+                        }
                     }       
                 }
             }

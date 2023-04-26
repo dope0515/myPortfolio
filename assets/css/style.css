@@ -677,6 +677,14 @@ main section#contact .sec-inner .contact-form li label input, main section#conta
 main section#contact .sec-inner .contact-form li label textarea {
   resize: none;
 }
+main section#contact .sec-inner .contact-form li button {
+  display: block;
+  background-color: #FFFFFF;
+  border: 0.1rem solid #000000;
+  border-radius: 0.4rem;
+  margin: 0 auto;
+  padding: 0.4rem 2rem;
+}
 
 @media screen and (max-width: 1280px) {
   main section .sec-inner {
