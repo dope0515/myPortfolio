@@ -49,7 +49,7 @@ main {
                     &:nth-child(2) {
                         transition-delay: 4s;
                     }
-                    strong {
+                    h4 {
                         font-size: 4rem;
                         font-weight: 700;
                     }
@@ -82,7 +82,7 @@ main {
                         }
                     }
                     .txt-wrap {
-                        strong {
+                        h4 {
                             display: inline-block;
                             font-size: 4rem;
                             font-weight: 700;

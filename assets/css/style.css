@@ -424,7 +424,7 @@ main section#intro ul li:nth-child(2) {
   -webkit-transition-delay: 4s;
           transition-delay: 4s;
 }
-main section#intro ul li strong {
+main section#intro ul li h4 {
   font-size: 4rem;
   font-weight: 700;
 }
@@ -453,7 +453,7 @@ main section#about .sec-inner .flex-box .img-wrap::before {
   left: -2rem;
   border: 3px solid #ffdb45;
 }
-main section#about .sec-inner .flex-box .txt-wrap strong {
+main section#about .sec-inner .flex-box .txt-wrap h4 {
   display: inline-block;
   font-size: 4rem;
   font-weight: 700;
