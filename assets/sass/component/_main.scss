@@ -173,14 +173,15 @@ main {
                         a {
                             display: block;
                             text-align: center;
-                            padding: 1rem;
+                            padding: 2rem 3rem;
                             .img-wrap {
                                 img {
                                     display: block;
                                     max-width: 100%;
                                     height: 30rem;
                                     margin: 0 auto;
-                                    object-fit: contain;
+                                    object-fit: scale-down;
+                                    transition: all 0.3s;
                                 }
                             }
                             span {
@@ -188,6 +189,13 @@ main {
                                 font-size: 1.8rem;
                                 font-weight: 700;
                                 margin-top: 1.6rem;
+                            }
+                            &:hover {
+                                .img-wrap {
+                                    img {
+                                        transform: scale(1.05);
+                                    }
+                                }
                             }
                         }
                         &:nth-child(2) {
@@ -293,40 +301,7 @@ main {
                     font-weight: 800;
                     margin-bottom: 4rem;
                 }
-                .contact-form {
-                    max-width: 54rem;
-                    border: 0.1rem solid #222222;
-                    border-radius: 0.4rem;
-                    padding: 1.4rem;
-                    margin: 0 auto;
-                    li {
-                        margin-bottom: 2rem;
-                        &:last-child {
-                            margin-bottom: 0;
-                        }
-                        label {
-                            span {
-                                display: block;
-                                margin-bottom: 1.4rem;
-                            }
-                            input,textarea {
-                                width: 100%;
-                                padding: 0.4rem 0.8rem;
-                            }
-                            textarea {
-                                resize: none; 
-                            }
-                        }
-                        button {
-                            display: block;                            
-                            background-color: #FFFFFF;
-                            border: 0.1rem solid #000000;
-                            border-radius: 0.4rem;
-                            margin: 0 auto;
-                            padding: 0.4rem 2rem;
-                        }
-                    }       
-                }
+
             }
         }
     }
