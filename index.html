@@ -308,7 +308,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/dope0515" title="깃허브 바로가기" target="_blank">
+                    <a href="https://github.com/dope0515" title="깃허브 바로가기" target="_blank" id="git">
                         <img src="assets/images/icon/icon_github.svg" alt="깃허브">
                     </a>
                 </li>
@@ -349,6 +349,16 @@
             round: true,
             vertical: true,
             horizontal: false
+        });
+        $('#git').on('click',function(){
+            console.log('깃허브');
+           if (!wcs_add) var wcs_add={};
+    		wcs_add["wa"] = "30704882e455d0";
+    		var _nasa={};
+    		if (window.wcs) {
+    		_nasa["cnv"] = wcs.cnv("5","0");
+    		wcs_do(_nasa);
+    		}
         });
     </script>
     	
