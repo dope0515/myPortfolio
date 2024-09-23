@@ -252,30 +252,28 @@
             });
 
             /*프로젝트 리스트*/
-            $(document).ready(function() {
-                $.ajax({
-                    url: '/assets/json/project-list.json',  // JSON 파일 경로
-                    method: 'GET',
-                    dataType: 'json',
-                    success: function(data) {
-                        var list1 = '';
-                        $.each(data, function(index, item) {
-                            list1 += `
-                                <li data-aos="fade-up">
-                                    <a href="${item.link}" target="_blank" title="${item.title}">
-                                        <div class="img-wrap">
-                                            <img src="${item.imgSrc}" alt="${item.altText}">
-                                        </div>
-                                        <span>${item.title}</span>
-                                    </a>
-                                </li>`;
-                        });
-                        $('.project-list').html(list1);  // ul에 동적으로 리스트 추가
-                    },
-                    error: function(xhr, status, error) {
-                        console.error('Error loading JSON data:', error);
-                    }
-                });
+            $.ajax({
+                url: '/assets/json/project-list.json',  // JSON 파일 경로
+                method: 'GET',
+                dataType: 'json',
+                success: function(data) {
+                    var list1 = '';
+                    $.each(data, function(index, item) {
+                        list1 += `
+                            <li data-aos="fade-up">
+                                <a href="${item.link}" target="_blank" title="${item.title}">
+                                    <div class="img-wrap">
+                                        <img src="${item.imgSrc}" alt="${item.altText}">
+                                    </div>
+                                    <span>${item.title}</span>
+                                </a>
+                            </li>`;
+                    });
+                    $('.project-list').html(list1);  // ul에 동적으로 리스트 추가
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error loading JSON data:', error);
+                }
             });
         })
     </script>
