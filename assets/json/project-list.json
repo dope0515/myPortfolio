@@ -1,0 +1,56 @@
+[
+    {
+        "link": "https://www.nhbank.com/nhmn/KO_NHMN_01.do",
+        "title": "NH 농협은행",
+        "imgSrc": "/assets/images/common/project/nh.png",
+        "altText": "농협은행"
+    },
+    {
+        "link": "https://graduate.sjcu.ac.kr/graduate/index.do",
+        "title": "세종 사이버대학교 / 대학원",
+        "imgSrc": "/assets/images/common/project/sejong.jpg",
+        "altText": "세종 사이버대학교 / 대학원"
+    },
+    {
+        "link": "/assets/pdf/lg.pdf",
+        "title": "LG전자",
+        "imgSrc": "/assets/images/common/project/lg.jpg",
+        "altText": "LG전자"
+    },
+    {
+        "link": "/assets/pdf/hyundai.pdf",
+        "title": "현대건설기계 관리자",
+        "imgSrc": "/assets/images/common/project/hyundai.jpg",
+        "altText": "현대건설기계 관리자"
+    },
+    {
+        "link": "https://hyundaibiolandmedical.com/main/main.html",
+        "title": "현대바이오랜드",
+        "imgSrc": "/assets/images/common/project/bioland.png",
+        "altText": "현대바이오랜드"
+    },
+    {
+        "link": "https://www.k-bread.com/main/main.html",
+        "title": "김영모 과자점",
+        "imgSrc": "/assets/images/common/project/kym.png",
+        "altText": "김영모 과자점"
+    },
+    {
+        "link": "https://hangeulhouse.co.kr/main/main.html",
+        "title": "한글주택",
+        "imgSrc": "/assets/images/common/project/hangeul.png",
+        "altText": "한글주택"
+    },
+    {
+        "link": "https://medicaldepot.medigate.net/main",
+        "title": "메디칼 데포",
+        "imgSrc": "/assets/images/common/project/medical.png",
+        "altText": "메디칼 데포"
+    },
+    {
+        "link": "https://anotherdoor.app/kor/main/main.html",
+        "title": "어나더도어",
+        "imgSrc": "/assets/images/common/project/skonec.png",
+        "altText": "어나더도어"
+    }
+]
